@@ -111,6 +111,24 @@ h3 {
     border: 3px solid var(--color3);
 }
 
+.skill-icon {
+    font-size: 50px;
+    color: var(--color4);
+    width: 7rem;
+
+}
+
+.skill-icon-text {
+    font-size: 13px;
+}
+
+.skill-icon:hover {
+    box-shadow: 2px var(--color1);
+    background-color: var(--color1);
+    translate: 0px -20px;
+}
+
+
 /* Projects */
 #projects-section1 {
     margin-top: 3rem;

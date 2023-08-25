@@ -123,9 +123,9 @@ h3 {
 }
 
 .skill-icon:hover {
-    box-shadow: 2px var(--color1);
+    box-shadow: 2px 2px var(--color1);
     background-color: var(--color1);
-    translate: 0px -20px;
+    translate: 0px -2px;
 }
 
 
@@ -158,4 +158,63 @@ h3 {
 
 .custom-shape-divider-top-1692945920 .shape-fill {
     fill: #FFFFFF;
+}
+
+/* Contact */
+#contact-section {
+    margin-top: auto;
+    background-color: var(--color4);
+    position: relative;
+    padding-bottom: 2rem;
+
+}
+
+/* divide 3 */
+.custom-shape-divider-top-1692984890 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1692984890 svg {
+    position: relative;
+    display: block;
+    width: calc(124% + 1.3px);
+    height: 44px;
+}
+
+.custom-shape-divider-top-1692984890 .shape-fill {
+    fill: #CAA0AE;
+}
+
+
+.contact-card {
+    padding: 2rem 0rem;
+    background-color: white;
+    box-shadow: 3px 3px var(--color1);
+
+}
+
+.contact-card:hover {
+    padding: 2rem 0rem;
+    background-color: var(--color1);
+    box-shadow: 3px 3px var(--color2);
+
+}
+
+.contact-icon {
+    font-size: 40px;
+}
+
+.contact-icon:hover {
+    box-shadow: 1px 1px var(--color4);
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: black;
 }

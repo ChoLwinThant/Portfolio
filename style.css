@@ -1,0 +1,143 @@
+:root {
+    --color1: #E9D5CA;
+    --color2: #EEBEE3;
+    --color3: #CAA0AE;
+    --color4: #662753;
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.title {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--color4);
+}
+
+h1 {
+    color: var(--color4);
+}
+
+.mylogo {
+    color: var(--color4);
+    font-size: 30px;
+}
+
+
+.my-nav {
+    padding: 0rem 8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: var(--color1);
+}
+
+.my-nav-item {
+    padding-left: 2rem;
+
+}
+
+.my-nav-item a {
+    color: var(--color4);
+}
+
+/* home */
+#about-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--color1);
+    /* align-items: center; */
+    position: relative;
+}
+
+.about-row {
+    align-items: center;
+}
+
+.about-text {
+
+    padding: 0rem 4rem;
+    text-align: end;
+}
+
+h3 {
+
+    justify-self: right;
+}
+
+.about-img {
+    padding: 0rem 8rem;
+    /* text-align: center; */
+
+}
+
+.my-pic {
+    /* align-items: center; */
+    max-height: 30rem;
+    border-radius: 170px 5px;
+}
+
+/* skill */
+#skills-section1 {
+
+    /* align-items: center; */
+    position: relative;
+}
+
+.skill-row {
+    align-items: center;
+    margin: 2rem 4rem;
+
+
+}
+
+.skill-text {
+
+    width: 100%;
+    text-align: center;
+    /* height: 100%;
+    text-align: justify;
+    background-image: url(images/skill-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: absolute;
+    border: 3px solid var(--color4);
+    border-radius: 10%; */
+}
+
+.skill-card {
+    align-items: center;
+    border: 3px solid var(--color3);
+}
+
+/* Projects */
+#projects-section1 {
+    margin-top: 3rem;
+
+    padding: 2rem;
+    background: var(--color3);
+    /* align-items: center; */
+    position: relative;
+}
+
+/* wave2 */
+.custom-shape-divider-top-1692945920 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1692945920 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 44px;
+}
+
+.custom-shape-divider-top-1692945920 .shape-fill {
+    fill: #FFFFFF;
+}

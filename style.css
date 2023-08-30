@@ -160,6 +160,39 @@ h3 {
     fill: #FFFFFF;
 }
 
+
+/* project */
+.project-card {
+    align-items: center;
+    border: 3px solid var(--color4);
+
+}
+
+.project-details-btn {
+    background-color: var(--color1);
+    color: var(--color4);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.project-details-btn:hover {
+    background-color: var(--color4);
+    color: var(--color1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Contact */
 #contact-section {
     margin-top: auto;

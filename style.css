@@ -1,8 +1,8 @@
 :root {
-    --color1: #E9D5CA;
-    --color2: #EEBEE3;
-    --color3: #CAA0AE;
-    --color4: #662753;
+    --color1: #F1F6F9;
+    --color2: #394867;
+    --color3: #212A3E;
+    --color4: #9ba4b5;
 }
 
 * {
@@ -13,11 +13,12 @@
 .title {
     margin-top: 1rem;
     text-align: center;
-    color: var(--color4);
+    color: var(--color3);
+    text-decoration: underline var(--color2);
 }
 
 h1 {
-    color: var(--color4);
+    color: var(--color3);
 }
 
 .mylogo {
@@ -42,6 +43,11 @@ h1 {
     color: var(--color4);
 }
 
+.nav-item-color {
+    color: var(--color3);
+}
+
+/* ..................................................................... */
 /* home */
 #about-section {
     margin-top: 3rem;
@@ -78,6 +84,29 @@ h3 {
     border-radius: 170px 5px;
 }
 
+@media (max-width: 768px) {
+
+    /* Add your responsive CSS rules here */
+    .about-text {
+        text-align: center;
+
+        padding: 0 10px;
+        /* Center text on small screens */
+    }
+}
+
+@media (max-width: 1110px) {
+
+    .about-img {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    /* Adjust other styles as needed */
+}
+
+/* ........................................................................... */
+
 /* skill */
 #skills-section1 {
 
@@ -85,17 +114,34 @@ h3 {
     position: relative;
 }
 
-.skill-row {
-    align-items: center;
-    margin: 2rem 4rem;
-
-
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
 }
 
-.skill-text {
+.skill-icon {
+    align-items: center;
+    text-align: center;
+}
+
+.skill-icon-text {
+    font-size: 20px;
+}
+
+/* .skill-img {
+    width: 100%;
+    max-height: 300rem;
+    text-align: center;
+    align-items: center;
+
+} */
+
+/* .skill-text-img {
 
     width: 100%;
-    text-align: center;
+    text-align: center; */
     /* height: 100%;
     text-align: justify;
     background-image: url(images/skill-bg.jpg);
@@ -104,37 +150,70 @@ h3 {
     background-position: absolute;
     border: 3px solid var(--color4);
     border-radius: 10%; */
-}
+/* } */
 
 .skill-card {
     align-items: center;
-    border: 3px solid var(--color3);
+    /* border: 3px solid var(--color3); */
 }
 
 .skill-icon {
+    padding: 15px 0px;
     font-size: 50px;
-    color: var(--color4);
-    width: 7rem;
+    color: var(--color3);
 
 }
 
-.skill-icon-text {
-    font-size: 13px;
-}
 
-.skill-icon:hover {
+.skill-card:hover {
     box-shadow: 2px 2px var(--color1);
     background-color: var(--color1);
     translate: 0px -2px;
 }
 
 
+@media (max-width: 1110px) {
+
+    .skill-text-img {}
+
+    /* Adjust other styles as needed */
+}
+
+@media (max-width: 1250px) {
+
+    /* Make the entire row stack vertically */
+    .skill-row {
+        flex-direction: column;
+    }
+
+    /* Reset column widths for smaller screens */
+    .col-4 {
+        flex: 0 0 100%;
+        /* Make each column take up full width */
+        max-width: 100%;
+        /* Ensure columns don't overflow */
+    }
+}
+
+/* ............................................................... */
+/* Education */
+#education-section1{
+    margin-top: 3rem;
+
+    padding: 2rem;
+    background: white;
+    /* align-items: center; */
+    position: relative; 
+}
+
+
+/* ............................................................... */
 /* Projects */
 #projects-section1 {
     margin-top: 3rem;
 
     padding: 2rem;
-    background: var(--color3);
+    background: white;
     /* align-items: center; */
     position: relative;
 }
@@ -157,7 +236,8 @@ h3 {
 }
 
 .custom-shape-divider-top-1692945920 .shape-fill {
-    fill: #FFFFFF;
+    /* fill: #FFFFFF; */
+    fill: var(--color4);
 }
 
 
@@ -179,7 +259,6 @@ h3 {
     background-color: var(--color4);
     color: var(--color1);
 }
-
 
 
 
@@ -234,8 +313,7 @@ h3 {
 
 .contact-card:hover {
     padding: 2rem 0rem;
-    background-color: var(--color1);
-    box-shadow: 3px 3px var(--color2);
+    box-shadow: 0px 0px var(--color2);
 
 }
 

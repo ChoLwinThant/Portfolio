@@ -3,6 +3,7 @@
     --color2: #394867;
     --color3: #212A3E;
     --color4: #9ba4b5;
+    --color5: #000000;
 }
 
 * {
@@ -31,7 +32,7 @@ h1 {
     padding: 0rem 8rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    background-color: var(--color1);
+    background-color: var(--color4);
 }
 
 .my-nav-item {
@@ -52,7 +53,7 @@ h1 {
 #about-section {
     margin-top: 3rem;
     padding: 2rem;
-    background: var(--color1);
+    background: var(--color4);
     /* align-items: center; */
     position: relative;
 }
@@ -62,9 +63,13 @@ h1 {
 }
 
 .about-text {
-
+    color: var(--color5);
     padding: 0rem 4rem;
     text-align: end;
+}
+
+.myName {
+    color: var(--color5);
 }
 
 h3 {
@@ -142,7 +147,7 @@ h3 {
 
     width: 100%;
     text-align: center; */
-    /* height: 100%;
+/* height: 100%;
     text-align: justify;
     background-image: url(images/skill-bg.jpg);
     background-repeat: no-repeat;
@@ -172,13 +177,6 @@ h3 {
 }
 
 
-@media (max-width: 1110px) {
-
-    .skill-text-img {}
-
-    /* Adjust other styles as needed */
-}
-
 @media (max-width: 1250px) {
 
     /* Make the entire row stack vertically */
@@ -197,15 +195,129 @@ h3 {
 
 /* ............................................................... */
 /* Education */
-#education-section1{
-    margin-top: 3rem;
 
+.clip {
+
+    clip-path: polygon(0 0, 17% 83%, 100% 100%, 0% 100%);
+    background-color: #9ba4b5;
+}
+
+#education-section1 {
+    margin-top: 3rem;
     padding: 2rem;
     background: white;
     /* align-items: center; */
-    position: relative; 
+    position: relative;
 }
 
+.education {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.edu-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 90px;
+}
+
+.edu-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color3);
+    padding: 0px 0px 20px 30px;
+}
+
+.edu-card {
+    position: relative;
+    padding: 20px;
+    width: auto;
+    height: 50vh;
+    padding: 80px 40px;
+    justify-content: center;
+    border: 1px solid var(--color4);
+    transition: all 0.4s;
+    background-image: url(images/edu-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.edu-text-img {
+    transition: all 0.4s;
+}
+
+.edu-card:hover,
+.edu-text-img:hover {
+    box-shadow: 0px 3px 12px 0px var(--color3);
+    border: 1px solid transparent;
+}
+
+.edu-card p {
+    line-height: 2;
+    font-size: 18px;
+}
+
+.edu-degree {
+    padding: 0px 30px;
+    border-left: 2px solid var(--color2);
+}
+
+.edu-box {
+    position: relative;
+    padding: 20px;
+    border: 1px solid var(--color3);
+    background-color: var(--color1);
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+
+.edu-box:hover {
+    box-shadow: 0px 3px 12px 0px var(--color2);
+    border: 1px solid transparent;
+}
+
+.edu-box::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 23px);
+    top: 0;
+    background-color: var(--color3);
+    border: 2px solid var(--color1);
+}
+
+.edu-box h5 {
+    position: relative;
+    color: var(--color3);
+    font-weight: bold;
+}
+
+.edu-box h4 {
+    font-size: 20px;
+    padding: 10px 0px 6px;
+    line-height: 1.5;
+}
+
+@media(max-width:1230px) {
+    .edu-row {
+        grid-template-columns: 1fr;
+    }
+
+    .edu-row .edu-col:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    .edu-text-img {
+        width: 60vw;
+    }
+
+}
 
 /* ............................................................... */
 /* Projects */

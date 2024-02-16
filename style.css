@@ -365,7 +365,11 @@ h3 {
 /* ............................................................... */
 /* Projects */
 #projects-section1 {
-    height: 80vh;
+    height: 260vh;
+}
+
+hr {
+    border-top: 2px dashed var(--color3);
 }
 
 .project-list {
@@ -375,13 +379,25 @@ h3 {
     margin-top: 100px;
 }
 
+.pj1 {}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 30px;
+}
+
 .project {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.project img {
+.project img,
+.pj-img {
     width: 100%;
     border-radius: 10px;
     display: block;
@@ -425,6 +441,63 @@ h3 {
 
 .project:hover .layer {
     height: 100%;
+}
+
+.pj-text-head,
+.column h3 {
+    text-align: center;
+}
+
+
+.column ul,
+.column p {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.pj-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.view-pj1 {
+    text-align: center;
+    justify-content: center;
+    background-color: #EBCDFE;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 16px;
+    transition-duration: 0.3s;
+}
+
+.view-pj2 {
+    text-align: center;
+    justify-content: center;
+    background-color: #FDE7B9;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 16px;
+    transition-duration: 0.3s;
+}
+
+.view-pj3 {
+    text-align: center;
+    justify-content: center;
+    background-color: #B9DAFD;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 16px;
+    transition-duration: 0.3s;
+}
+
+.view-pj1:hover,
+.view-pj2:hover {
+    border: none;
+    background-color: var(--color2);
+    color: white;
 }
 
 #projects-section1 {

@@ -1,0 +1,25 @@
+h1,
+h2 {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+
+}
+
+img {
+
+    width: 60%;
+}
+
+hr {
+    border-top: 1px dashed #FDE7B9;
+}
+
+p {
+    font-size: 20px;
+    margin: 0px 30px;
+    padding: 10px 30px;
+    text-align: justify;
+}

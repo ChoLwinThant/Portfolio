@@ -494,7 +494,8 @@ hr {
 }
 
 .view-pj1:hover,
-.view-pj2:hover {
+.view-pj2:hover,
+.view-pj3:hover {
     border: none;
     background-color: var(--color2);
     color: white;

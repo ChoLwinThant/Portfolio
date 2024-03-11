@@ -253,22 +253,25 @@ h3 {
 }
 
 
-.education {
+.education,
+.experience {
     width: 100%;
-    min-height: 80vh;
+    min-height: 0vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.edu-row {
+.edu-row,
+.exp-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 90px;
 }
 
-.edu-title {
+.edu-title,
+.exp-title {
     font-size: 20px;
     font-weight: bold;
     color: var(--color3);
@@ -304,26 +307,31 @@ h3 {
     font-size: 18px;
 }
 
-.edu-degree {
+.edu-degree,
+.exp-degree {
     padding: 0px 30px;
     border-left: 2px solid var(--color2);
 }
 
-.edu-box {
+.edu-box,
+.exp-box {
     position: relative;
     padding: 20px;
     border: 1px solid var(--color3);
     background-color: var(--color1);
     transition: all 0.4s;
     margin-bottom: 20px;
+    width: 100%;
 }
 
-.edu-box:hover {
+.edu-box:hover,
+.exp-box:hover {
     box-shadow: 0px 3px 12px 0px var(--color2);
     border: 1px solid transparent;
 }
 
-.edu-box::before {
+.edu-box::before,
+.exp-box::before {
     content: '';
     position: absolute;
     width: 16px;
@@ -335,10 +343,22 @@ h3 {
     border: 2px solid var(--color1);
 }
 
-.edu-box h5 {
+.edu-box h5,
+.exp-box h5 {
     position: relative;
     color: var(--color3);
     font-weight: bold;
+}
+
+.exp-box h6 {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.exp-box p,
+.exp-box ul li {
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 .edu-box h4 {
@@ -348,11 +368,14 @@ h3 {
 }
 
 @media(max-width:1230px) {
-    .edu-row {
+
+    .edu-row,
+    .exp-row {
         grid-template-columns: 1fr;
     }
 
-    .edu-row .edu-col:nth-child(2) {
+    .edu-row .edu-col:nth-child(2),
+    .exp-row .exp-col:nth-child(2) {
         margin-top: 30px;
     }
 
